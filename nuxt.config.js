@@ -30,6 +30,8 @@ module.exports = {
     modules: [
         '@nuxtjs/pwa'
     ],
+    plugins: [
+        '~/plugins/checkAuth'],
 
     /*
     ** Build configuration

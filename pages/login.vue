@@ -29,6 +29,7 @@
                 console.log('Attempting to log in...')
                 backend.login(this.loginEmail, this.loginPassword)
                 // event.preventDefault();
+                // redirect('/')
             }
         },
         computed: {
