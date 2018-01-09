@@ -5,12 +5,22 @@ const createStore = () => {
         state: {
             currentUser: null
         },
+        getters: {
+            getUser: (state) => {
+                return state.currentUser
+            }
+        },
         mutations: {
-            setUser (state, data) {
-                state.currentUser = data
+            setUser: (state, payload) => {
+                state.currentUser = payload
+            }
+        },
+        actions: {
+            autoLogin: ({commit}, payload) => {
+                commit('setUser', payload)
             },
-            removeUser (state) {
-                state.currentUser = null
+            autoLogout: ({commit}) => {
+                commit('setUser', null)
             }
         }
     })

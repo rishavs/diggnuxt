@@ -27,7 +27,7 @@
         methods: {
             submit () {
                 console.log('Attempting to log in...')
-                backend.login(this.loginEmail, this.loginPassword)
+                backend.login(this.loginEmail, this.loginPassword).then(() => this.$router.replace({ path: '/' }))
                 // event.preventDefault();
                 // redirect('/')
             }
