@@ -11,7 +11,8 @@ import {
     VGrid,
     VToolbar,
     VTextField,
-    VMenu
+    VMenu,
+    VForm
 } from 'vuetify'
 
 Vue.use(Vuetify, {
@@ -35,6 +36,7 @@ Vue.use(Vuetify, {
         VGrid,
         VToolbar,
         VTextField,
-        VMenu
+        VMenu,
+        VForm
     }
 })
