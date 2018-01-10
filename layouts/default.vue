@@ -1,15 +1,13 @@
 <template>
     <v-app dark>
 
-        <navbar/>
+        <Navbar/>
 
         <v-content>
-            <v-container>
-                <nuxt />
-            </v-container>
+            <nuxt />
         </v-content>
 
-        <footsies />
+        <Footsies />
 
     </v-app>
 </template>

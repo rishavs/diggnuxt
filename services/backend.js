@@ -50,7 +50,8 @@ var backend = {
                     'id': doc.id,
                     'title': doc.data().title,
                     'content': doc.data().content,
-                    'author': doc.data().author
+                    'author': doc.data().author,
+                    'thumb': doc.data().thumb
                 }
                 items.push(item)
             })

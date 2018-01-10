@@ -1,15 +1,10 @@
 <template>
-    <v-toolbar fixed app clipped-left>
+    <v-toolbar fixed app clipped-left elevation-1 app>
 
-        <v-toolbar-items >
-            <v-btn flat nuxt to="/">Digglu</v-btn>
-        </v-toolbar-items>
+        <v-toolbar-title><v-btn flat nuxt to="/">Digglu</v-btn></v-toolbar-title>
         
-        <v-container fluid>
-            <v-text-field solo name="searchbar" id="searchbar" prepend-icon="search" placeholder="Search..."></v-text-field>
-        </v-container>
+        <v-text-field solo name="searchbar" id="searchbar" prepend-icon="search" placeholder="Search..."></v-text-field>
 
-        <!-- <v-spacer></v-spacer> -->
         <v-toolbar-items >
             <v-btn v-if="$store.state.currentUser" :ripple="false" flat>New Post</v-btn>
             <v-menu v-if="$store.state.currentUser" offset-y>
